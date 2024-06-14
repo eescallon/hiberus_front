@@ -7,8 +7,11 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.0",
+    "bootstrap": "^5.3.3",
+    "cookie-universal": "^2.2.2",
     "next": "latest",
     "react": "^18.2.0",
+    "react-cookie": "^7.1.4",
     "react-dom": "^18.2.0",
     "react-redux": "^9.1.0"
   },

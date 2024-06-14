@@ -10,27 +10,43 @@ export const Nav = () => {
 
   return (
     <nav className={styles.nav}>
-      <Link
-        className={`${styles.link} ${pathname === "/" ? styles.active : ""}`}
-        href="/"
-      >
-        Home
+      <Link href="/" className="navbar-brand">
+          <img src="/logo.png"
+              height="30"
+              alt="MDB Logo"
+              loading="lazy" />
       </Link>
       <Link
         className={`${styles.link} ${
-          pathname === "/verify" ? styles.active : ""
+          pathname === "/product" ? styles.active : ""
         }`}
-        href="/verify"
+        href="/product"
       >
-        Verify
+        Product
       </Link>
       <Link
         className={`${styles.link} ${
-          pathname === "/quotes" ? styles.active : ""
+          pathname === "/inventory" ? styles.active : ""
         }`}
-        href="/quotes"
+        href="/inventory"
       >
-        Quotes
+        Inventory
+      </Link>
+      <Link
+        className={`${styles.link} ${
+          pathname === "/shopping" ? styles.active : ""
+        }`}
+        href="/shopping"
+      >
+        Shopping
+      </Link>
+      <Link
+        className={`${styles.link} ${
+          pathname === "/cart" ? styles.active : ""
+        }`}
+        href="/cart"
+      >
+        Carrito de compras
       </Link>
     </nav>
   );
